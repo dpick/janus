@@ -4,6 +4,9 @@ set number
 set ruler
 syntax on
 
+" Set Leader Key
+let mapleader = ","
+
 " Whitespace stuff
 set nowrap
 set tabstop=2
@@ -98,7 +101,8 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color molokai
+set t_Co=256
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))

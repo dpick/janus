@@ -1,3 +1,5 @@
+" Set Leader Key
+let mapleader = ","
 
 if has("gui_macvim")
   " Fullscreen takes up entire screen
