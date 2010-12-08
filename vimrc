@@ -27,6 +27,12 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 
 " Status bar
 set laststatus=2
+set statusline+=[%F]
+set statusline+=[FORMAT=%{&ff}]
+set statusline+=[TYPE=%Y]
+set statusline+=[POS=%04l,%04v]
+set statusline+=[%p%%]
+set statusline+=%*
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
