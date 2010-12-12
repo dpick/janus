@@ -64,10 +64,6 @@ function s:setupMarkup()
   map <buffer> <Leader>p :Mm <CR>
 endfunction
 
-" make and python use real tabs
-au FileType make                                     set noexpandtab
-au FileType python                                   set noexpandtab
-
 " Thorfile, Rakefile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
 
@@ -101,6 +97,17 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" Change Tabs
+map <C-Left> :tabp<CR>
+map <C-Right> :tabn<CR>
+
+" Change split panes
+map <Leader>j <C-w>j
+map <Leader>k <C-w>k
+map <Leader>l <C-w>l
+map <Leader>h <C-w>h
+
 
 " Use modeline overrides
 set modeline

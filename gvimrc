@@ -1,13 +1,20 @@
 " Set Leader Key
 let mapleader = ","
 
+map <D-Left> :tabp<CR>
+map <D-Right> :tabn<CR>
+map <Leader>j <C-w>j
+map <Leader>k <C-w>k
+map <Leader>l <C-w>l
+map <Leader>h <C-w>h
+
 if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandT<CR>
+  " map <D-t> :CommandT<CR>
 
   " Command-Shift-F for Ack
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
