@@ -20,6 +20,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+map <Leader>s :nohlsearch<CR>
 
 " Tab completion
 set wildmode=list:longest,list:full

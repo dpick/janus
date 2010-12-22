@@ -7,6 +7,7 @@ map <Leader>j <C-w>j
 map <Leader>k <C-w>k
 map <Leader>l <C-w>l
 map <Leader>h <C-w>h
+map <Leader>s :nohlsearch<CR>
 
 if has("gui_macvim")
   " Fullscreen takes up entire screen
